@@ -1,0 +1,228 @@
+:root{
+    --width: 300px;
+    --padding: 10px;
+    --bgcolor: rgb(52, 52, 52);
+    --hovercolor: rgb(23, 23, 23);
+    --width-collapsed: 50px;
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed);
+}
+
+.body-expanded{
+    margin-left: var(--width);
+}
+
+#main-container{
+    margin: 50px auto;
+    width: 1200px;
+}
+
+#main-container{
+    
+}
+
+form{
+    width: 30%;
+    border: 1px solid #cccccc;
+    margin: 20px;
+    padding: 20px;
+}
+
+table{
+    background-color: white;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th, td{
+    padding: 5px;
+}
+
+thead{
+    background-color: rgb(180, 214, 238);
+    border-bottom: solid 5px #0e356e;
+    color: black;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+#sidemenu{
+    background-color: var(--bgcolor);
+    color: white;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#sidemenu a{
+    color: white;
+    text-decoration: none;
+}
+
+#sidemenu #smheader{
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--hovercolor);
+}
+
+#sidemenu #smheader #title{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#sidemenu #smheader #title, #sidemenu #smheader #menu-btn{
+    vertical-align: middle;
+}
+
+#sidemenu #smheader #menu-btn{
+    display: inline-block;
+}
+
+#sidemenu #smheader #menu-btn{
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+
+#sidemenu #smheader #menu-btn:hover{
+    background-color: var(--hovercolor);
+}
+
+#sidemenu #smheader #menu-btn .btn-cy{
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+
+#sidemenu #menu-items{
+    overflow: hidden;
+}
+
+#sidemenu #menu-items .mitem{
+    width: var(--width);
+}
+
+#sidemenu #menu-items .mitem .icon{
+    display: inline-block;
+}
+
+#sidemenu #menu-items .mitem .icon,
+#sidemenu #menu-items .mitem .title{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#sidemenu #menu-items .mitem a{
+    display: block;
+}
+
+#sidemenu #menu-items .mitem a:hover{
+    background-color: var(--hovercolor);
+}
+
+#sidemenu #menu-items .mitem .icon{
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width-collapsed);
+}
+
+#sidemenu #menu-items .mitem .icon img{
+    width: 100%;
+}
+
+#sidemenu #menu-items .title{
+    padding: var(--padding) 0;
+}
+
+#sidemenu #menu-items .mitem.separator{
+    height: 1px;
+    border-bottom: solid 1px var(--hovercolor);
+    margin: 15px 0;
+}
+
+.menu-expanded{
+    width: var(--width);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-expanded #smheader #title{
+    display: inline-block;
+    width: calc(100% - 50px);
+    margin-right: -5px;
+    padding: var(--padding  );
+}
+
+.menu-expanded #smheader #title span{
+    width: calc(var(--width) - var(--width-collapsed) - 5px);
+    overflow: hidden;
+    display: inline-block;
+}
+
+.menu-collapsed{
+    width: var(--width-collapsed);
+}
+
+.menu-collapsed #smheader #title{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-collapsed .mitem{
+    width: 100px;
+}
+
+input{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+input:focus{
+    border: 1px solid #1668C4;
+}
+
+input[type="submit"]{
+    margin-bottom: 0px;
+    background: #1668C4;
+    color: #ffffff;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    color: #ffffff;
+    height: 35px;
+    width: 360px;
+    font-size: 13.3333px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1668C4;
+    border: 1px solid #cccccc;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
